@@ -1,8 +1,8 @@
 const settings = {
-    "minecraft_version": "1.21.1", // supports up to 1.21.1
-    "host": "127.0.0.1", // or "localhost", "your.ip.address.here"
+    "minecraft_version": "1.20.4", // supports up to 1.21.1
+    "host": "localhost", // or "localhost", "your.ip.address.here"
     "port": 55916,
-    "auth": "offline", // or "microsoft"
+    "auth": "offline", // "offline" or "microsoft" | the way bot connects to MC Server 
 
     // the mindserver manages all agents and hosts the UI
     "host_mindserver": true, // if true, the mindserver will be hosted on this machine. otherwise, specify a public IP address
@@ -32,7 +32,7 @@ const settings = {
     "language": "en", // translate to/from this language. Supports these language names: https://cloud.google.com/translate/docs/languages
     "show_bot_views": false, // show bot's view in browser at localhost:3000, 3001...
 
-    "allow_insecure_coding": false, // allows newAction command and model can write/run code on your computer. enable at own risk
+    "allow_insecure_coding": true, // allows newAction command and model can write/run code on your computer. enable at own risk
     "allow_vision": false, // allows vision model to interpret screenshots as inputs
     "blocked_actions" : [], // commands to disable and remove from docs. Ex: ["!setMode"]
     "code_timeout_mins": -1, // minutes code is allowed to run. -1 for no timeout
